@@ -3,15 +3,16 @@
 <div class="container">
   <div class="row">
     <div *ngFor="let pokemon of pokemonList" class="col m4 s6">
-      <div class="card horizontal">
+      <div class="card horizontal" pkmnBorderCard>
         <div class="card-image">
           <img [src]="pokemon.picture" alt="This is a picture of a pokemon" />
         </div>
         <div class="card-stacked">
           <div class="card-content">
             <p>{{ pokemon.name }}</p>
+            <p>{{ pokemon }}</p>
             <p>
-              <small>{{ pokemon.created }}</small>
+              <small>{{ pokemon.created | date | uppercase }}</small>
             </p>
           </div>
         </div>
