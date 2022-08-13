@@ -1,0 +1,24 @@
+.container {
+  margin-top: 3em;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.pokemon-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.chip {
+  font-size: 1.1em;
+  font-style: italic;
+  width: fit-content;
+}
