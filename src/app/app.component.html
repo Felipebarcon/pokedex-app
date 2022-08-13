@@ -10,10 +10,15 @@
         <div class="card-stacked">
           <div class="card-content">
             <p>{{ pokemon.name }}</p>
-            <p>{{ pokemon }}</p>
             <p>
-              <small>{{ pokemon.created | date | uppercase }}</small>
+              <small>{{ pokemon.created | date: 'dd/MM/YYYY' }} </small>
             </p>
+            <span
+              *ngFor="let type of pokemon.types"
+              class="{{ type | pokemonTypeColor }}"
+            >
+              {{ type }}
+            </span>
           </div>
         </div>
       </div>
